@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Play Minecraft 1.16 in your browser" />
+	<meta name="keywords" content="Minecraft, 1.16, browser, game" />
+	<title>Minecraft 1.16</title>
+	<style>
+		body {
+			margin: 0px;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			background-color: #000;
+		}
+		
+		.container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 5px;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+		
+		.button.active {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class="button" id="w">W</button>
+		<button class="button" id="a">A</button>
+		<button class="button" id="s">S</button>
+		<button class="button" id="d">D</button>
+		<button class="button" id="shift">Shift</button>
+		<button class="button" id="ctrl">Ctrl</button>
+	</div>
+	
+	<script>
+		const buttons = document.querySelectorAll(".button");
+		
+		buttons.forEach(button => {
+			button.addEventListener("click", () => {
+				const key = button.id;
+				// Your code to press the key goes here
+			});
+		});
+	</script>
+</body>
+</html>
